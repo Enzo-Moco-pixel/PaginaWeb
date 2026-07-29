@@ -1,0 +1,17 @@
+header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    border: 5px solid aqua;
+}
+
+main {
+    background-color: aqua;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
