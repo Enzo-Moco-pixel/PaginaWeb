@@ -1,6 +1,6 @@
 header {
-    background-color: blue;
-    color: white;
+    background-color: yellow
+    color: white
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -9,7 +9,7 @@ header {
 }
 
 main {
-    background-color: aqua;
+    background-color: orangered
     color: white;
     max-width: 800px;
     margin: 0 auto;
