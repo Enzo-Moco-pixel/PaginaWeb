@@ -22,4 +22,9 @@ article {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+
+}
+
+.BotaoClicado {
+    background-color: red;
 }
