@@ -1,17 +1,18 @@
 // Botão
-document.addEventListener("DOMContentLoaded", function () {
+const botoes = document.querySelectorAll("button");
 
-    const botao = document.querySelector(".botao-curtir");
-    const contador = botao.querySelector("span");
-
-    let numero = 0;
-
-    botao.addEventListener("click", function () {
-
-        numero++;
-        contador.textContent = numero;
-
-    });
-
-    
-});
+botoes.forEach(function(botao){
+    let curtiu = false;
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado(){
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        if(curtiu === false){
+        texto.textContent++;
+        curtiu = true;
+        } else{
+            texto.textContent--;
+            curtiu = false;
+        }
+    }
+})
