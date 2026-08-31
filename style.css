@@ -1,12 +1,16 @@
+/* Corpo */
 body {
-    background-color: black;
+    background-color: #111;
     margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
+/* Cabeçalho */
 header {
-    height: 180px;
+    min-height: 220px;
 
-    background-image: url("img-video/imagem-blog.png");
+    background-image: url("cenario1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,34 +33,55 @@ header h1 {
 
 header p {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
+/* Conteúdo */
 main {
-    background-color: black;
-    color: rgb(0, 0, 0);
-    padding: 16px;
-    font-size: 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 30px auto;
+    padding: 20px;
 }
 
-main h1,main h3{
-    color: orange;
+/* Artigo */
+.economia {
+    background-color: #222;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-img{
+.economia h2 {
+    color: #90ee90;
+    margin-top: 25px;
+}
+
+.economia p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Imagem */
+img {
     width: 300px;
+    max-width: 100%;
     height: auto;
-    margin: 10px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
-.botao-curtir {
-    background-color: greenyellow;
+/* Vídeo */
+.video {
+    background-color: #222;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+    text-align: center;
 }
 
-.botao-nao-curtir {
-    background-color: red;
+.video h2 {
+    color: #90ee90;
 }
 
 video {
@@ -65,9 +90,18 @@ video {
     border-radius: 10px;
 }
 
-article{
-    background-color: rgb(252, 252, 252);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+/* Botão de curtir */
+.botao-curtir {
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.botao-curtir:hover {
+    transform: scale(1.05);
 }
