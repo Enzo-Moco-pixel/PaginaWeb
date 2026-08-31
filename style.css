@@ -1,6 +1,6 @@
 /* Corpo */
 body {
-    background-color: #111;
+    background-color: #f5a623;
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
@@ -10,7 +10,7 @@ body {
 header {
     min-height: 220px;
 
-    background-image: url("cenario1.jpg");
+    background-image: url("cenario3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@ header p {
     margin-top: 15px;
 }
 
-/* Conteúdo */
+/* Conteúdo principal */
 main {
     max-width: 1000px;
     margin: 30px auto;
@@ -45,14 +45,14 @@ main {
 
 /* Artigo */
 .economia {
-    background-color: #222;
+    background-color: #5a3100;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .economia h2 {
-    color: #90ee90;
+    color: #ffd54f;
     margin-top: 25px;
 }
 
@@ -61,7 +61,18 @@ main {
     line-height: 1.6;
 }
 
-/* Imagem */
+/* Lista */
+.economia ul {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.economia li {
+    margin-bottom: 5px;
+}
+
+/* Imagens */
 img {
     width: 300px;
     max-width: 100%;
@@ -73,7 +84,7 @@ img {
 
 /* Vídeo */
 .video {
-    background-color: #222;
+    background-color: #5a3100;
     padding: 25px;
     margin-top: 25px;
     border-radius: 15px;
@@ -81,7 +92,7 @@ img {
 }
 
 .video h2 {
-    color: #90ee90;
+    color: #ffd54f;
 }
 
 video {
@@ -90,9 +101,9 @@ video {
     border-radius: 10px;
 }
 
-/* Botão de curtir */
+/* Botão de like */
 .botao-curtir {
-    background-color: greenyellow;
+    background-color: #ffd54f;
     color: black;
     border: none;
     padding: 10px 18px;
