@@ -1,20 +1,17 @@
 // Botão
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     const botao = document.querySelector(".botao-curtir");
-    let curtiu = false;
+    const contador = botao.querySelector("span");
+
+    let numero = 0;
+
     botao.addEventListener("click", function () {
-        const contador = botao.querySelector("span");
 
-        if (curtiu === false) {
+        numero++;
+        contador.textContent = numero;
 
-            contador.textContent = 1;
-            curtiu = true;
-
-        } else {
-
-            contador.textContent = 0;
-            curtiu = false;
-        }
     });
+
+    
 });
