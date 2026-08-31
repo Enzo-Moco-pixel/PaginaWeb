@@ -1,6 +1,6 @@
 /* Corpo */
 body {
-    background-color: #f5a623;
+    background: linear-gradient(135deg, #ff8c00, #ff4500);
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
@@ -9,15 +9,14 @@ body {
 /* Cabeçalho */
 header {
     min-height: 220px;
-
-    background-image: url("cenario5.webp");
+    background-image:
+        linear-gradient(rgba(255, 69, 0, 0.25), rgba(255, 140, 0, 0.25)),
+        url("cenario5.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     color: white;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,14 +44,14 @@ main {
 
 /* Artigo */
 .economia {
-    background-color: #5a3100;
+    background: linear-gradient(135deg, #b33a00, #8f2d00);
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .economia h2 {
-    color: #ffd54f;
+    color: #ffcc66;
     margin-top: 25px;
 }
 
@@ -72,7 +71,7 @@ main {
     margin-bottom: 5px;
 }
 
-/* Imagens */
+/* Imagem */
 img {
     width: 300px;
     max-width: 100%;
@@ -80,39 +79,51 @@ img {
     display: block;
     margin: 20px auto;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 
 /* Vídeo */
 .video {
-    background-color: #5a3100;
+    background: linear-gradient(135deg, #b33a00, #8f2d00);
+
     padding: 25px;
     margin-top: 25px;
     border-radius: 15px;
     text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .video h2 {
-    color: #ffd54f;
+    color: #ffcc66;
 }
 
-video {
+.video iframe {
     width: 100%;
     max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border: none;
     border-radius: 10px;
 }
 
-/* Botão de like */
+/* Botão */
 .botao-curtir {
-    background-color: #ffd54f;
-    color: black;
+    background: linear-gradient(135deg, #ffb000, #ff7b00);
+    color: white;
     border: none;
-    padding: 10px 18px;
+    padding: 12px 22px;
     border-radius: 8px;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
+    transition: 0.2s;
 }
 
 .botao-curtir:hover {
     transform: scale(1.05);
+    background: linear-gradient(135deg, #ff7b00, #ff4500);
+}
+
+.botao-curtir:active {
+    transform: scale(0.95);
 }

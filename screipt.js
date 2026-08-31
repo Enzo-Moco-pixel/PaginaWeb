@@ -1,28 +1,20 @@
 // Botão
-const botoes = document.querySelectorAll("button");
-
-botoes.forEach(function(botao) {
-
+document.addEventListener("DOMContentLoaded", function () {
+    
+    const botao = document.querySelector(".botao-curtir");
     let curtiu = false;
-
-// Botão clicado
-    botao.addEventListener("click", botaoClicado);
-
-    function botaoClicado() {
-
-        console.log("Fui clicado!");
-
-        let texto = botao.querySelector("span");
+    botao.addEventListener("click", function () {
+        const contador = botao.querySelector("span");
 
         if (curtiu === false) {
 
-            texto.textContent++;
+            contador.textContent = 1;
             curtiu = true;
 
         } else {
 
-            texto.textContent--;
+            contador.textContent = 0;
             curtiu = false;
         }
-    }
+    });
 });
