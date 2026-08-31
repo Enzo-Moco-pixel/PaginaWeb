@@ -5,7 +5,7 @@ botoes.forEach(function(botao) {
 
     let curtiu = false;
 
-// Botão é clicado
+// Botão clicado
     botao.addEventListener("click", botaoClicado);
 
     function botaoClicado() {
